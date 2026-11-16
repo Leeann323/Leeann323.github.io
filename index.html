@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leeann323</title>
+<meta name="description" content="Leeann323 - projects and notes">
+<style>
+  :root{
+    --bg:#0b0f14; --card:#131a23; --line:#1f2a37;
+    --fg:#e6edf3; --muted:#8b98a5; --accent:#4dabf7;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; min-height:100vh; background:
+      radial-gradient(900px 500px at 15% -10%, #16324a 0%, transparent 60%),
+      radial-gradient(700px 400px at 100% 0%, #1d2b46 0%, transparent 55%),
+      var(--bg);
+    color:var(--fg);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","Microsoft YaHei",sans-serif;
+    display:flex; align-items:center; justify-content:center; padding:40px 20px;
+  }
+  .wrap{width:100%; max-width:780px}
+  .hero{display:flex; gap:20px; align-items:center; margin-bottom:34px; flex-wrap:wrap}
+  .avatar{
+    width:72px;height:72px;border-radius:20px;flex:0 0 auto;
+    background:linear-gradient(135deg,#4dabf7,#7c5cff);
+    display:grid;place-items:center;font-size:30px;font-weight:700;color:#fff;
+    box-shadow:0 10px 30px rgba(77,171,247,.25);
+  }
+  h1{font-size:32px;margin:0 0 6px;letter-spacing:-.5px}
+  .sub{color:var(--muted);margin:0;font-size:15px}
+  .badge{display:inline-flex;gap:8px;align-items:center;margin-top:10px;font-size:12.5px;color:#7ee787;
+    background:rgba(126,231,135,.08);border:1px solid rgba(126,231,135,.25);padding:4px 10px;border-radius:999px}
+  .dot{width:7px;height:7px;border-radius:50%;background:#7ee787;box-shadow:0 0 8px #7ee787}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+  .card{
+    background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.012));
+    border:1px solid var(--line); border-radius:16px; padding:18px;
+    text-decoration:none; color:inherit; transition:.18s ease; display:block;
+  }
+  .card:hover{transform:translateY(-3px); border-color:#2f4d6b; background:rgba(77,171,247,.06)}
+  .card h3{margin:0 0 6px;font-size:16px}
+  .card p{margin:0;color:var(--muted);font-size:13.5px;line-height:1.6}
+  footer{margin-top:34px;color:#5c6b7a;font-size:12.5px;display:flex;gap:14px;flex-wrap:wrap}
+  a.lnk{color:var(--accent);text-decoration:none}
+  a.lnk:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="avatar">L</div>
+      <div>
+        <h1>Leeann323</h1>
+        <p class="sub">Personal projects · experiments · notes</p>
+        <span class="badge"><span class="dot"></span>GitHub Pages 运行中</span>
+      </div>
+    </section>
+
+    <section class="grid">
+      <a class="card" href="https://github.com/Leeann323/elderly-fall-detection" target="_blank" rel="noopener">
+        <h3>Elderly Fall Detection</h3>
+        <p>面向独居老人的跌倒检测实验与模型工程。</p>
+      </a>
+      <a class="card" href="https://github.com/Leeann323/linguatrans" target="_blank" rel="noopener">
+        <h3>LinguaTrans</h3>
+        <p>语言翻译相关的工具与流程实验。</p>
+      </a>
+      <a class="card" href="https://github.com/Leeann323" target="_blank" rel="noopener">
+        <h3>GitHub 主页</h3>
+        <p>查看全部仓库与提交记录。</p>
+      </a>
+    </section>
+
+    <footer>
+      <span>© <span id="y">2026</span> Leeann323</span>
+      <span>Hosted on GitHub Pages</span>
+      <a class="lnk" href="https://github.com/Leeann323" target="_blank" rel="noopener">github.com/Leeann323</a>
+    </footer>
+  </main>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
